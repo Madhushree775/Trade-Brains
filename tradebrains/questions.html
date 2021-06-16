@@ -1,0 +1,55 @@
+
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <title>Quiz</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/bootstrap.css" rel="stylesheet">
+ <link href="css/fontawesom.css" rel="stylesheet">
+     <link href="css/fontawesom.min.css" rel="stylesheet">
+  
+     <link href="css/style.css" rel="stylesheet">
+     <script src="scripts/jquery-1.9.1.js"></script>
+     <script src="scripts/jquery-ui.js"></script>
+     <script src="scripts/underscore.js"></script>
+     <script src="scripts/question.js"></script>
+     </head> 
+    
+<body>
+  <div class="header">
+    <a class="logo">Trade Brains</a>
+    <div class="header-right">
+      <span class="timeaction">Time Left: </span>
+      <i class="fa fa-clock-o timeaction"  aria-hidden="true"></i>
+      <span class="timeaction" id="timeinterval"></span>
+</div>
+  </div>
+  <div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4>MCQ Quiz</h4><span id="questioncount"></span>
+                    </div>
+                </div>
+                <div class="question bg-white p-3 border-bottom" id="questionsSection">
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                  <button class="btn btn-primary" type="button" id="prvbtn" name="prvbtn" onclick="previousquestion()">
+                    <i class="fa fa-chevron-left mt-1 mr-1"></i>&nbsp;previous</button>
+                    <button class="btn btn-primary" type="button" id="btnnext" name="btnnext" onclick="nextquestion()">Next
+                      <i class="fa fa-chevron-right ml-2"></i></button>
+                      <button class="btn btn-primary " style="display: none;" type="button" id="btnsubmit" onclick="submitquestion()">Submit
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
